@@ -16,4 +16,4 @@ meta-spec:
 name: Dist-Zilla-Plugin-BuildFile
 requires:
   perl: 5.006
-version: 0.01
+version: 0.02

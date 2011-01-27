@@ -1,6 +1,28 @@
 Revision History for Dist-Zilla-Plugin-BuildFile
 ================================================
 
+v0.02 2011-01-27
+----------------
+
+* Date: 2011-01-27 14:06:21 -0500
+  Commit: Stirling Westrup <swestrup@gmail.com>
+  Hash: 94a1e5cd66e3c8a5b668707d6f2172981b9678a5
+
+    New release, this time with autogenerating README file
+
+* Date: 2011-01-27 13:28:44 -0500
+  Commit: Stirling Westrup <swestrup@gmail.com>
+  Hash: f6985c6908f9ae0584a8a5fd678157e96b6b5787
+
+    working on autogenerating a README file
+
+* Date: 2011-01-27 13:28:11 -0500
+  Commit: Stirling Westrup <swestrup@gmail.com>
+  Hash: a5bb4ae6cc2e316858ecbf4c6f2b7e4728e212b0
+
+    working on autogenerating a README file
+
+
 v0.01 2011-01-27
 ----------------
 

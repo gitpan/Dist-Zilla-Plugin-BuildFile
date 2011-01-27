@@ -6,11 +6,13 @@ use Moose;
 BEGIN
   {
     $Dist::Zilla::Plugin::BuildFile::VERSION
-      = substr '$$Version: 0.01 $$', 11, -3;
+      = substr '$$Version: 0.02 $$', 11, -3;
   }
 
 use Moose::Autobox;
 use MooseX::Types::Path::Class qw(Dir File);
+
+use Data::Dumper;
 
 with
   ( 'Dist::Zilla::Role::BeforeBuild'
@@ -102,16 +104,17 @@ sub _build_command
 # build a template-expanded version of the command.
 sub _build__command
   { my $self = shift;
+#    my $module = $self->zilla->main_module;
 
-    return fill_in_string
-      ( $self->command
-      , HASH	      =>
-	  { filenames => $self->filename
-	  , filename  => ${$self->filename}[0]
-	  , targets   => $self->target
-	  , target    => ${$self->target}[0]
-	  }
-      );
+    my $hash =
+      { filenames => $self->filename
+      , filename  => ${$self->filename}[0]
+      , targets   => $self->target
+      , target    => ${$self->target}[0]
+#      , module    => $module->name
+      };
+
+    return fill_in_string($self->command, HASH => $hash);
   }
 
 # Build all files we'll want to Gather.
@@ -154,7 +157,7 @@ Dist::Zilla::Plugin::BuildFile - build files by running an external command
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
