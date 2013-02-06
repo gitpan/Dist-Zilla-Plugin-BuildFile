@@ -2,30 +2,37 @@
 use strict;
 use warnings;
 
-BEGIN { require 5.006; }
+use 5.006;
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'build a custom file by running an external command',
-  'AUTHOR' => 'Stirling Westrup <swestrup@gmail.com>',
-  'BUILD_REQUIRES' => {
-    'English' => '0',
-    'Test::More' => '0'
+  "ABSTRACT" => "build a custom file by running an external command",
+  "AUTHOR" => "Stirling Westrup <swestrup\@gmail.com>",
+  "BUILD_REQUIRES" => {},
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+  "DISTNAME" => "Dist-Zilla-Plugin-BuildFile",
+  "EXE_FILES" => [],
+  "LICENSE" => "gpl",
+  "NAME" => "Dist::Zilla::Plugin::BuildFile",
+  "PREREQ_PM" => {
+    "Data::Dumper" => 0,
+    "Dist::Zilla::Role::AfterBuild" => 0,
+    "Dist::Zilla::Role::BeforeBuild" => 0,
+    "IPC::Run3" => 0,
+    "Moose" => 0,
+    "Moose::Autobox" => 0,
+    "MooseX::Types::Path::Class" => 0,
+    "Text::Template" => 0,
+    "namespace::autoclean" => 0
   },
-  'DISTNAME' => 'Dist-Zilla-Plugin-BuildFile',
-  'EXE_FILES' => [],
-  'LICENSE' => 'gpl',
-  'NAME' => 'Dist::Zilla::Plugin::BuildFile',
-  'PREREQ_PM' => {},
-  'VERSION' => '0.02',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.03",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

@@ -6,7 +6,7 @@ use Moose;
 BEGIN
   {
     $Dist::Zilla::Plugin::BuildFile::VERSION
-      = substr '$$Version: 0.02 $$', 11, -3;
+      = substr '$$Version: 0.03 $$', 11, -3;
   }
 
 use Moose::Autobox;
@@ -157,7 +157,7 @@ Dist::Zilla::Plugin::BuildFile - build files by running an external command
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

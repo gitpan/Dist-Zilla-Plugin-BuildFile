@@ -1,66 +1,20 @@
 Revision History for Dist-Zilla-Plugin-BuildFile
 ================================================
 
-v0.02 2011-01-27
+v0.03 2013-02-06
 ----------------
 
-* Date: 2011-01-27 14:06:21 -0500
-  Commit: Stirling Westrup <swestrup@gmail.com>
-  Hash: 94a1e5cd66e3c8a5b668707d6f2172981b9678a5
+* Date: 2013-02-06 13:44:50 -0500
+  Commit: Stirling Westrup <stirling@userful.ca>
+  Hash: fbd6eb90c14bf02d34760f0269b07b71cbef3399
 
-    New release, this time with autogenerating README file
+    Update dist.ini to correctly scan for runtime dependencies
 
-* Date: 2011-01-27 13:28:44 -0500
-  Commit: Stirling Westrup <swestrup@gmail.com>
-  Hash: f6985c6908f9ae0584a8a5fd678157e96b6b5787
+* Date: 2013-02-06 12:36:47 -0500
+  Commit: Stirling Westrup <stirling@userful.ca>
+  Hash: cae7ae5b09f58b6d1737ad59286cffc18eca5a39
 
-    working on autogenerating a README file
-
-* Date: 2011-01-27 13:28:11 -0500
-  Commit: Stirling Westrup <swestrup@gmail.com>
-  Hash: a5bb4ae6cc2e316858ecbf4c6f2b7e4728e212b0
-
-    working on autogenerating a README file
-
-
-v0.01 2011-01-27
-----------------
-
-* Date: 2011-01-27 12:48:45 -0500
-  Commit: Stirling Westrup <swestrup@gmail.com>
-  Hash: 08bf33516cc2ea9ae615bfdcc1e0323a6caf7435
-
-    Ready for first release
-
-* Date: 2011-01-27 12:36:20 -0500
-  Commit: Stirling Westrup <swestrup@gmail.com>
-  Hash: b32f0839744f5c6b4685bc7e132506bc8f8b1cb1
-
-    Think the versioning is correct now
-
-* Date: 2011-01-27 12:21:30 -0500
-  Commit: Stirling Westrup <swestrup@gmail.com>
-  Hash: 4dd12ea5550a33ab5fb3a4d13552932b2e1dfe45
-
-    misspelled version keyword
-
-* Date: 2011-01-27 12:19:55 -0500
-  Commit: Stirling Westrup <swestrup@gmail.com>
-  Hash: 1d437f0d905d96db5e3f37feff31fd2dcdebff91
-
-    updated .gitignore
-
-* Date: 2011-01-27 12:18:43 -0500
-  Commit: Stirling Westrup <swestrup@gmail.com>
-  Hash: 928372a032487497c260cbe76630471e40ec5b53
-
-    Trying a new versioning scheme
-
-* Date: 2011-01-27 11:46:45 -0500
-  Commit: Stirling Westrup <swestrup@gmail.com>
-  Hash: 0c6019ca5cfa1ebd4fed1f8d5a4a98e5e79d40ce
-
-    Setting up a basic distribution
+    Update dist.ini to know about bin files
 
 
 ===================================
