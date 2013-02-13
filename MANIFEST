@@ -1,4 +1,3 @@
-BuildFile.pm
 CHANGES
 INSTALL
 LICENSE
@@ -6,6 +5,7 @@ MANIFEST
 META.yml
 Makefile.PL
 README
+lib/Dist/Zilla/Plugin/BuildFile.pm
 t/author-critic.t
 t/release-dist-manifest.t
 t/release-minimum-version.t
